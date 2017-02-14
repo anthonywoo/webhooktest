@@ -1,0 +1,3 @@
+language: ruby
+notifications:
+  webhooks: https://b0fed493.ngrok.io/integrations/travis/19f5950bf88f17e5ea13022ecd04316c
