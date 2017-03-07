@@ -4,7 +4,11 @@ branches:
     - master
     - staging
 script:
-  - ruby ./test.rb
-  - exit 0
+  - "ruby ./test.rb"
+
+env:
+  matrix:
+    - "TEST=1"
+    - "TEST=2"
 # notifications:
 #   webhooks: https://b0fed493.ngrok.io/integrations/travis/19f5950bf88f17e5ea13022ecd04316c

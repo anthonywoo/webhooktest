@@ -1,2 +1,2 @@
-puts ENV.fetch('TRAVIS_COMMIT')
+puts ENV.fetch('TRAVIS_JOB_NUMBER')
 ENV
