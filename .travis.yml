@@ -1,10 +1,13 @@
 language: ruby
 branches:
   only:
-    - master
-    - staging
+  - master
+  - staging
 script:
-  - ruby ./test.rb
-  - exit 0
-# notifications:
-#   webhooks: https://b0fed493.ngrok.io/integrations/travis/19f5950bf88f17e5ea13022ecd04316c
+- ruby ./test.rb
+- exit 0
+notifications:
+  slack:
+    secure: BC3/df9GHsUTj5XmYGJbjqUAJq1GOFiBdqPcE3qwuaIq1R6kagQ4LpZbnbn68aSNFCviqS25Qgtdqwt35qkfcgvMNp3GC8pk0ZuShhJdT4ifYDyMrHhN/oDSbmugJ0cZdZFr018Tupm+8OuFZ8beVkge4MQ6UehJb2wOggbb9xXVV9UGsKvTt5HTPyQYAz0Qqr3hHc24o9NZWKu3dHS1NH3VyIZKwJ8NsQYzbq4odfxs4gdLByP7HFGOmr6sTLbQro6dF1WvssretqKtcR5STGNQRR2Dva1PtcCBL/ntWEoOCrd5OlCoOfM6QOCikkp0AFrWWBd+P9Nmmd1+j5DmjHY2YYwGN4xCwr4DfVk+9a99fRPPJTNUbQmOyMpNIylT53JE2QeYdjTVAC5PkKUYNqPycQLqMOuSTHTSAZBHrzhb3GWvJQJ469ijw7/IPJLq/qZdNEPTwNgdo2+4c2K7dpKtiNkZNoPGMCo9A1TRcqPMKN9PGhoMvO2DrUN6F6In69DbgdwV9aDnJXLkYq7c80bnRxottZsQSAIsJa24GUOpUJ2Pco/XH0r1mezKfqFf50SJ7E2gSlaY8DgXI/QPyWitJmj14Gu7R3PbeVM+ioeoFrhQjFmYZMtlUfBk/sILTUR1gKRcSRL9BQ3Zye9o17eFHfGxvkzORM4KWEs6RG0=
+    on_success: always
+    on_failure: always
