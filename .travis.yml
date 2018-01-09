@@ -5,7 +5,6 @@ branches:
   - staging
 script:
 - ruby ./test.rb
-- exit 0
 notifications:
   slack:
     rooms:
